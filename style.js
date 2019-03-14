@@ -2,7 +2,10 @@ import {StyleSheet} from 'react-native';
 
 let style = StyleSheet.create({
   dateTouch: {
-    width: 142
+    width: 142,
+    borderBottomColor: "#AAAAAA",
+    borderBottomWidth: 1,
+    paddingVertical: 10
   },
   dateTouchBody: {
     flexDirection: 'row',
@@ -19,16 +22,24 @@ let style = StyleSheet.create({
   dateInput: {
     flex: 1,
     height: 40,
-    borderWidth: 1,
-    borderColor: '#aaa',
     alignItems: 'center',
     justifyContent: 'center'
   },
   dateText: {
-    color: '#333'
+    fontFamily: 'Open Sans',
+    fontSize: 16,
+    fontWeight: '400',
+    color: '#666666',
+    alignSelf: 'flex-start',
+    paddingLeft: 10
   },
   placeholderText: {
-    color: '#c9c9c9'
+    fontFamily: 'Open Sans',
+    fontSize: 12,
+    fontWeight: '400',
+    color: '#999999',
+    alignSelf: 'flex-start',
+    paddingLeft: 10
   },
   datePickerMask: {
     flex: 1,
@@ -52,7 +63,7 @@ let style = StyleSheet.create({
   },
   btnTextText: {
     fontSize: 16,
-    color: '#46cf98'
+    color: '#ff8800'
   },
   btnTextCancel: {
     color: '#666'
@@ -65,8 +76,6 @@ let style = StyleSheet.create({
   },
   datePicker: {
     marginTop: 42,
-    borderTopColor: '#ccc',
-    borderTopWidth: 1
   },
   disabled: {
     backgroundColor: '#eee'
